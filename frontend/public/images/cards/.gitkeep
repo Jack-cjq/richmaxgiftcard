@@ -1,0 +1,7 @@
+# 礼品卡 Logo 图片存放目录
+# 将卡片 Logo 图片放在此目录下
+# 例如：xbox.png, itunes.png, steam.png 等
+# 
+# 在后台管理中添加卡片时，Logo URL 格式：
+# /images/cards/xbox.png
+

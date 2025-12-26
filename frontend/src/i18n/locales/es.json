@@ -1,0 +1,218 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "viewAll": "Ver Todo",
+    "seeMore": "Ver Más",
+    "getStarted": "Comenzar",
+    "adminLogin": "Iniciar Sesión Admin",
+    "noData": "Sin Datos",
+    "update": "Actualizar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "close": "Cerrar"
+  },
+  "theme": {
+    "darkMode": "Modo Oscuro",
+    "lightMode": "Modo Claro"
+  },
+  "header": {
+    "title": "Plataforma de Tarjetas de Regalo",
+    "home": "Inicio",
+    "trades": "Registros de Transacciones",
+    "help": "Centro de Ayuda",
+    "about": "Acerca de Nosotros",
+    "adminLogin": "Iniciar Sesión Admin"
+  },
+  "home": {
+    "featuredProducts": "Tarjetas de Regalo Destacadas",
+    "exchangeRates": "Tipos de Cambio en Tiempo Real",
+    "referralRewards": "Gana Recompensas",
+    "conversionCalculator": "Calculadora de Conversión",
+    "exchangeHall": "Sala de Intercambio",
+    "recentTrades": "Transacciones Recientes",
+    "processGuide": "Proceso de Intercambio",
+    "securityInfo": "Garantía de Seguridad",
+    "supportedCards": "Tarjetas de Regalo Soportadas"
+  },
+  "referralRewards": {
+    "title": "Gana Recompensas",
+    "description": "¡Gana recompensas refiriendo amigos a nuestra plataforma! Cada referencia exitosa te acerca más a beneficios exclusivos. Comienza a compartir y obtén tu recompensa.",
+    "startEarning": "Comenzar a Ganar",
+    "earnRewards": "Gana Recompensas",
+    "referDescription": "Refiere a tus amigos y gana puntos cada vez que realicen una transacción.",
+    "referralProgram": "Programa de Referidos",
+    "commission": "Gana 5% de comisión en cada transacción",
+    "transactions": "Transacciones",
+    "years": "Años",
+    "support": "Soporte"
+  },
+  "calculator": {
+    "title": "Calculadora de Conversión",
+    "selectCardType": "Seleccionar Tipo de Tarjeta",
+    "selectSubCategory": "Seleccionar Subcategoría",
+    "enterAmount": "Ingresar Monto de Tarjeta",
+    "cashValue": "Valor en Efectivo",
+    "calculating": "Calculando...",
+    "amountHint": "El monto se calcula según la tasa actual.",
+    "chooseCardType": "Elegir un tipo de tarjeta",
+    "chooseSubCategory": "Elegir una subcategoría",
+    "noCategoryAvailable": "No hay subcategorías disponibles para este tipo de tarjeta. Por favor configure en el panel de administración.",
+    "currency": {
+      "ngn": "Naira (₦)",
+      "ghc": "Cedis de Ghana (₵)"
+    }
+  },
+  "products": {
+    "exchangeRate": "Tipo de Cambio",
+    "limit": "Límite",
+    "exchangeNow": "Intercambiar Ahora",
+    "category": "Categoría",
+    "all": "Todos",
+    "noProducts": "No hay productos disponibles",
+    "noProductsInCategory": "No hay productos en esta categoría",
+    "showMore": "Mostrar Más",
+    "showLess": "Mostrar Menos"
+  },
+  "trades": {
+    "title": "Registros de Transacciones",
+    "recentTrades": "Transacciones Recientes",
+    "noTrades": "Sin registros de transacciones",
+    "status": {
+      "completed": "Completado",
+      "processing": "Procesando"
+    },
+    "amount": "Monto",
+    "totalAmount": "Monto Total",
+    "updatedAt": "Actualizado en",
+    "page": "Página",
+    "of": "de",
+    "total": "Total",
+    "records": "registros",
+    "itemsPerPage": "Elementos por página",
+    "product": "Producto",
+    "statusLabel": "Estado"
+  },
+  "exchangeRates": {
+    "title": "Tipos de Cambio en Tiempo Real",
+    "updatedAt": "Actualizado en",
+    "noRates": "Sin datos de tipo de cambio",
+    "currency": "Moneda",
+    "symbol": "Símbolo",
+    "rate": "Tipo de Cambio",
+    "change": "Cambio",
+    "changeRate": "Tasa de Cambio",
+    "updateTime": "Hora de Actualización",
+    "otherCurrencies": "Otras Monedas"
+  },
+  "currencies": {
+    "usd": "Dólar Estadounidense",
+    "cny": "Yuan Chino",
+    "ngn": "Naira Nigeriana",
+    "btc": "Bitcoin",
+    "ghc": "Cedis de Ghana",
+    "jpy": "Yen Japonés",
+    "eur": "Euro",
+    "gbp": "Libra Esterlina",
+    "cad": "Dólar Canadiense",
+    "aud": "Dólar Australiano"
+  },
+  "processGuide": {
+    "title": "Proceso de Intercambio",
+    "step": "Paso"
+  },
+  "securityInfo": {
+    "title": "Garantía de Seguridad",
+    "description": "Adoptamos múltiples medidas de seguridad para garantizar que cada transacción sea segura y confiable"
+  },
+  "footer": {
+    "copyright": "© 2024 RichMax. Todos los derechos reservados.",
+    "tagline": "Su Socio de Confianza para el Intercambio de Tarjetas de Regalo",
+    "helpCenter": "Centro de Ayuda",
+    "tradeRecords": "Registros de Transacciones"
+  },
+  "about": {
+    "hero": {
+      "description": "Plataforma líder mundial de intercambio de tarjetas de regalo, proporcionando servicios seguros, rápidos y confiables a clientes de todo el mundo."
+    },
+    "introduction": {
+      "title": "Acerca de RichMax",
+      "paragraph1": "RichMax es una plataforma líder mundial de intercambio de tarjetas de regalo dedicada a proporcionar servicios de comercio de tarjetas de regalo seguros, rápidos y confiables. Servimos a clientes de más de 50 países, ayudándolos a convertir tarjetas de regalo no utilizadas en efectivo de manera rápida y segura.",
+      "paragraph2": "Con años de experiencia en la industria y un equipo profesional, hemos establecido un sistema de servicio integral que cubre múltiples marcas de tarjetas de regalo y monedas. Nuestra plataforma utiliza tecnología de seguridad avanzada para garantizar que cada transacción esté protegida.",
+      "paragraph3": "Nos comprometemos a proporcionar las mejores tasas de cambio y un excelente servicio al cliente, haciendo que el intercambio de tarjetas de regalo sea simple, conveniente y confiable."
+    },
+    "stats": {
+      "title": "Nuestros Logros",
+      "transactions": "Transacciones Totales",
+      "users": "Usuarios Activos",
+      "countries": "Países Atendidos",
+      "satisfaction": "Satisfacción del Cliente"
+    },
+    "strengths": {
+      "title": "Por Qué Elegir RichMax",
+      "professional": {
+        "title": "Equipo Profesional",
+        "description": "Años de experiencia en la industria con un equipo dedicado de expertos que garantiza un servicio de calidad."
+      },
+      "security": {
+        "title": "Seguridad Nivel Bancario",
+        "description": "Medidas avanzadas de encriptación y seguridad para proteger cada transacción y datos del usuario."
+      },
+      "speed": {
+        "title": "Procesamiento Rápido",
+        "description": "Procesamiento rápido de transacciones con la mayoría de los intercambios completados en minutos."
+      },
+      "global": {
+        "title": "Alcance Global",
+        "description": "Atendiendo a clientes de más de 50 países con soporte multi-moneda."
+      },
+      "competitive": {
+        "title": "Tasas Competitivas",
+        "description": "Mejores tasas de cambio del mercado, garantizando el máximo valor para sus tarjetas de regalo."
+      },
+      "service": {
+        "title": "Soporte 24/7",
+        "description": "Servicio al cliente las 24 horas del día, los 7 días de la semana, listo para asistirlo en cualquier momento."
+      }
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Hacer que el intercambio de tarjetas de regalo sea simple, seguro y accesible para todos, ayudando a los clientes a desbloquear el valor de sus tarjetas de regalo no utilizadas mientras mantenemos los más altos estándares de servicio y seguridad."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Convertirse en la plataforma de intercambio de tarjetas de regalo más confiable y preferida del mundo, reconocida por la innovación, confiabilidad y experiencia excepcional del cliente."
+    },
+    "gallery": {
+      "title": "Galería de la Empresa"
+    }
+  },
+  "supportedCards": {
+    "title": "Tarjetas de Regalo Soportadas",
+    "noCards": "Sin tarjetas soportadas",
+    "description": "Intercambia tus tarjetas de regalo de estas marcas populares."
+  },
+  "help": {
+    "title": "Centro de Ayuda",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contáctenos",
+    "needMoreHelp": "¿Necesitas más ayuda?",
+    "contactDescription": "Si aún tienes preguntas, contacta a nuestro equipo de soporte.",
+    "contactButton": "Contactar Soporte"
+  },
+  "productDetail": {
+    "notFound": "Producto No Encontrado",
+    "backToList": "Volver a la Lista de Productos",
+    "home": "Inicio",
+    "exchangeHall": "Sala de Intercambio",
+    "minAmount": "Monto Mínimo",
+    "maxAmount": "Monto Máximo",
+    "noImage": "Imagen No Disponible",
+    "exchangeNow": "Intercambiar Ahora"
+  }
+}
+

@@ -1,0 +1,43 @@
+{
+  "name": "giftcard-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "init:admin": "tsx src/scripts/init-admin.ts",
+    "init:rates": "tsx src/scripts/init-exchange-rates.ts",
+    "verify:rates": "tsx src/scripts/verify-rates.ts",
+    "init:trades": "tsx src/scripts/init-trades.ts",
+    "init:conversion-config": "tsx src/scripts/init-conversion-config.ts",
+    "init:videos": "tsx src/scripts/init-videos-table.ts",
+    "verify:videos": "tsx src/scripts/verify-videos-table.ts",
+    "init:social-buttons": "tsx src/scripts/init-social-buttons.ts"
+  },
+  "dependencies": {
+    "@types/multer": "^2.0.0",
+    "axios": "^1.13.2",
+    "bcryptjs": "^2.4.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.10.4",
+    "@types/pg": "^8.10.9",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

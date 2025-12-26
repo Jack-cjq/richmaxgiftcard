@@ -1,0 +1,546 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* 重置默认样式 */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* 默认使用深色模式背景 */
+    background-color: #000000;
+    color: #D4AF37;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* 浅色模式覆盖 */
+  html:not(.dark-mode) {
+    background-color: #F5F7FA;
+    color: #2D3A4A;
+  }
+  
+  html.dark-mode {
+    background-color: #000000;
+    color: #D4AF37;
+  }
+  
+  body {
+    /* 默认使用深色模式背景 */
+    background-color: #000000;
+    color: #D4AF37;
+    @apply font-sans antialiased;
+    font-family: 'Inter', 'PingFang SC', 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* 标题字体 - Montserrat */
+  h1, h2, h3, h4, h5, h6,
+  .section-title,
+  .heading {
+    font-family: 'Montserrat', 'PingFang SC', 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: 600; /* SemiBold */
+  }
+  
+  /* 数字显示字体 - Rubik */
+  .display-number,
+  .currency,
+  .rate,
+  .amount,
+  .price {
+    font-family: 'Rubik', 'Inter', 'PingFang SC', 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: 500; /* Medium */
+  }
+  
+  /* 浅色模式覆盖 */
+  html:not(.dark-mode) body {
+    background-color: #F5F7FA;
+    color: #2D3A4A;
+  }
+  
+  html.dark-mode body {
+    background-color: #000000;
+    color: #D4AF37;
+  }
+  
+  /* 确保所有页面使用一致的背景色 */
+  #root {
+    /* 默认使用深色模式背景 */
+    background-color: #000000 !important;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* 浅色模式覆盖 */
+  html:not(.dark-mode) #root {
+    background-color: #F5F7FA !important;
+  }
+  
+  html.dark-mode #root {
+    background-color: #000000 !important;
+  }
+  
+  /* Focus 样式 - 主色高亮（金融蓝） */
+  *:focus-visible {
+    outline: none;
+    --tw-ring-offset-width: 2px;
+    --tw-ring-width: 2px;
+    --tw-ring-color: #3B7CB8;
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) #F5F7FA, 0 0 0 calc(var(--tw-ring-offset-width) + var(--tw-ring-width)) var(--tw-ring-color);
+  }
+  
+  html.dark-mode *:focus-visible {
+    --tw-ring-color: #D4AF37;
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) #000000, 0 0 0 calc(var(--tw-ring-offset-width) + var(--tw-ring-width)) var(--tw-ring-color);
+  }
+  
+  /* 链接样式 */
+  a {
+    color: #3B7CB8;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #2F6393;
+  }
+  
+  html.dark-mode a {
+    color: #D4AF37;
+  }
+  
+  html.dark-mode a:hover {
+    color: #FFD966;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  /* 深色模式工具类 */
+  .dark-mode {
+    /* 这些类会在 html.dark-mode 时生效 */
+  }
+}
+
+/* 深色模式全局样式 */
+html.dark-mode {
+  /* 全局文字颜色 */
+  color: #D4AF37;
+}
+
+html.dark-mode .dark-mode\:bg-black {
+  background-color: #000000 !important;
+}
+
+html.dark-mode .dark-mode\:bg-black {
+  background-color: #000000 !important;
+}
+
+html.dark-mode .dark-mode\:text-gold-500 {
+  color: #D4AF37;
+}
+
+html.dark-mode .dark-mode\:text-gold-400 {
+  color: #FFD966;
+}
+
+html.dark-mode .dark-mode\:text-gold-600 {
+  color: #B8941F;
+}
+
+html.dark-mode .dark-mode\:border-gold-500\/30 {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+html.dark-mode .dark-mode\:border-gold-500\/50 {
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+html.dark-mode .dark-mode\:bg-gold-500 {
+  background-color: #D4AF37;
+}
+
+html.dark-mode .dark-mode\:bg-gold-600 {
+  background-color: #B8941F;
+}
+
+html.dark-mode .dark-mode\:hover\:bg-gold-600:hover {
+  background-color: #B8941F;
+}
+
+html.dark-mode .dark-mode\:hover\:text-gold-400:hover {
+  color: #FFD966;
+}
+
+/* 深色模式下金色背景按钮的文字颜色强制为黑色 */
+html.dark-mode button.dark-mode\:bg-gold-500,
+html.dark-mode a.dark-mode\:bg-gold-500,
+html.dark-mode .dark-mode\:bg-gold-500 {
+  color: #000000 !important;
+}
+
+html.dark-mode button.dark-mode\:bg-gold-500 svg,
+html.dark-mode a.dark-mode\:bg-gold-500 svg,
+html.dark-mode .dark-mode\:bg-gold-500 svg {
+  color: #000000 !important;
+  stroke: #000000 !important;
+}
+
+/* 换算计算器深色模式背景 */
+html.dark-mode .calculator-dark-bg {
+  background: linear-gradient(to bottom right, #B8941F, #9C7A07) !important;
+  border-color: rgba(212, 175, 55, 0.4) !important;
+}
+
+/* 确保换算计算器内部输入框和选择框的边框在深色模式下显示 */
+html.dark-mode .calculator-dark-bg select,
+html.dark-mode .calculator-dark-bg input {
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+html.dark-mode .calculator-dark-bg select:focus,
+html.dark-mode .calculator-dark-bg input:focus {
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+  border-color: rgba(212, 175, 55, 0.5) !important;
+}
+
+html.dark-mode .calculator-dark-bg select:disabled {
+  border-color: rgba(212, 175, 55, 0.2) !important;
+  opacity: 0.6;
+}
+
+/* 确保换算计算器内部所有按钮的边框在深色模式下显示 */
+html.dark-mode .calculator-dark-bg button {
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+/* 货币选择按钮 - 未选中状态 */
+html.dark-mode .calculator-dark-bg button[class*="dark-mode:border-gold-500/30"] {
+  border-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+/* 货币选择按钮 - 选中状态 */
+html.dark-mode .calculator-dark-bg button[class*="dark-mode:border-gold-500/50"] {
+  border-color: rgba(212, 175, 55, 0.5) !important;
+}
+
+/* Get Started 按钮 */
+html.dark-mode .calculator-dark-bg button[class*="w-full py-4"] {
+  border-color: rgba(212, 175, 55, 0.5) !important;
+}
+
+/* 所有按钮的聚焦状态 */
+html.dark-mode .calculator-dark-bg button:focus {
+  border-color: rgba(212, 175, 55, 0.6) !important;
+}
+
+/* 所有按钮的悬浮状态 */
+html.dark-mode .calculator-dark-bg button:hover {
+  border-color: rgba(212, 175, 55, 0.4) !important;
+}
+
+/* 深色模式下强制白色和渐变背景变为黑色（排除后台管理页面） */
+html.dark-mode .bg-white:not(.admin-page *),
+html.dark-mode section.bg-white:not(.admin-page *) {
+  background-color: #000000 !important;
+}
+
+/* 深色模式下所有渐变背景强制为黑色（排除轮播图、图片元素和产品卡片相关元素） */
+html.dark-mode [class*="bg-gradient"]:not(.carousel-image):not(.carousel-container *):not([style*="backgroundImage"]):not(img):not(.product-image-container *):not(.product-image-wrapper *):not(.product-image-overlay) {
+  background: #000000 !important;
+  background-color: #000000 !important;
+}
+
+/* 深色模式下 section-card 的背景 */
+html.dark-mode .section-card {
+  background-color: #000000 !important;
+}
+
+/* 深色模式下特定渐变背景覆盖 */
+html.dark-mode .bg-gradient-to-br.from-blue-50,
+html.dark-mode .bg-gradient-to-br.from-green-50 {
+  background: #000000 !important;
+}
+
+/* 确保轮播图在深色模式下正常显示 - 最高优先级 */
+html.dark-mode .carousel-container {
+  background-color: transparent !important;
+}
+
+/* 轮播图背景图片必须显示 - 完全排除所有背景覆盖规则 */
+html.dark-mode .carousel-image {
+  background-color: transparent !important;
+  /* 不覆盖任何背景图片相关属性 */
+}
+
+/* 轮播图容器和图片 - 图片自然高度显示，不裁剪 */
+.carousel-container {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  position: relative;
+  width: 100%;
+  display: block;
+  line-height: 0; /* 消除图片下方的空白间隙 */
+}
+
+.carousel-image img.carousel-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 确保遮罩层覆盖整个图片区域 */
+.carousel-image > .absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 轮播图底部渐变遮罩 - 方案1：自然过渡到下方区域 */
+.carousel-with-gradient {
+  position: relative;
+}
+
+.carousel-bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%; /* 使用相对高度，适应不同屏幕 */
+  min-height: 180px; /* 最小高度保证 */
+  max-height: 300px; /* 最大高度限制 */
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* 浅色模式下的渐变遮罩 - 自然过渡到浅色背景，大幅减少灰雾感 */
+html:not(.dark-mode) .carousel-bottom-gradient {
+  /* 使用更轻的渐变，从完全透明到浅色背景，减少灰雾感 */
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 247, 250, 0) 0%,
+    rgba(245, 247, 250, 0.1) 30%,
+    rgba(245, 247, 250, 0.3) 60%,
+    rgba(245, 247, 250, 0.6) 85%,
+    rgba(245, 247, 250, 0.9) 100%
+  );
+  /* 添加柔和的白色光晕效果，让过渡更自然，但减少强度 */
+  box-shadow: inset 0 -100px 100px -50px rgba(255, 255, 255, 0.25);
+}
+
+/* 深色模式下的渐变遮罩 - 过渡到黑色背景 */
+html.dark-mode .carousel-bottom-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 30%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.85) 90%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+}
+
+/* SupportedCards 重叠卡片样式 - 方案2：上移覆盖 */
+.supported-cards-overlay {
+  /* 确保在轮播图上方显示 */
+  z-index: 10;
+}
+
+/* 悬浮联系按钮样式 */
+.floating-contact-btn {
+  width: 48px; /* 移动端：缩小到 48px */
+  height: 48px;
+}
+
+@media (min-width: 768px) {
+  .floating-contact-btn {
+    width: 80px; /* 桌面端：缩小到 80px */
+    height: 80px;
+  }
+}
+
+/* Instagram 按钮渐变背景 */
+.instagram-btn {
+  background: linear-gradient(45deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%) !important;
+}
+
+.floating-contact-icon {
+  width: 24px; /* 移动端图标：缩小到 24px */
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .floating-contact-icon {
+    width: 48px; /* 桌面端图标：缩小到 48px */
+    height: 48px;
+  }
+}
+
+
+/* 如果使用CSS变量，也要确保显示 */
+html.dark-mode .carousel-image[style*="--carousel-bg-image"] {
+  background-image: var(--carousel-bg-image) !important;
+  background: var(--carousel-bg-image) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* 浅色模式下的轮播图遮罩层 - 大幅减少遮罩，消除灰雾感 */
+html:not(.dark-mode) .carousel-image > .bg-gradient-to-r {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05)) !important;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05)) !important;
+}
+
+/* 深色模式下的轮播图遮罩层保持黑色渐变 */
+html.dark-mode .carousel-image > .bg-gradient-to-r {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)) !important;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)) !important;
+}
+
+/* 强制确保轮播图背景图片显示 - 确保内联样式不被覆盖 */
+html.dark-mode .carousel-container .carousel-image[style*="backgroundImage"] {
+  /* 内联样式优先级最高，不覆盖任何背景相关属性 */
+  background-image: inherit !important;
+  background: inherit !important;
+  background-size: inherit !important;
+  background-position: inherit !important;
+  background-repeat: inherit !important;
+  background-color: transparent !important;
+}
+
+/* 确保所有图片在深色模式下正常显示 */
+html.dark-mode img {
+  opacity: 1 !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* 确保产品卡片中的图片容器背景正常 */
+html.dark-mode .bg-silver-100:not(.product-image-container) {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+html.dark-mode .product-image-container {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+html.dark-mode .product-image {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* 确保图片元素不受背景覆盖规则影响 */
+html.dark-mode img.product-image,
+html.dark-mode .product-image-container img {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+html.dark-mode .product-image-wrapper {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* 确保产品图片在深色模式下正常显示且不被遮盖 */
+html.dark-mode .product-image-wrapper img.product-image {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 1 !important;
+  position: relative !important;
+  display: block !important;
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* 确保遮罩层在深色模式下正常显示，且不影响图片 */
+html.dark-mode .product-image-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent) !important;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent) !important;
+  z-index: 2 !important;
+}
+
+/* 确保产品卡片整体悬浮时图片正常显示 */
+html.dark-mode .card-item.group:hover .product-image-wrapper {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+html.dark-mode .card-item.group:hover .product-image-wrapper img.product-image {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 1 !important;
+  display: block !important;
+}
+
+/* 确保产品卡片悬浮时，图片容器不被任何黑色背景覆盖 */
+html.dark-mode .card-item:hover .product-image-wrapper,
+html.dark-mode .card-item.group:hover .product-image-wrapper {
+  background: rgba(255, 255, 255, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F5F7FA;
+}
+
+html.dark-mode ::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8CA0B4;
+  border-radius: 9999px;
+}
+
+html.dark-mode ::-webkit-scrollbar-thumb {
+  background-color: #D4AF37;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #708095;
+}
+
+html.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background-color: #FFD966;
+}
+
+

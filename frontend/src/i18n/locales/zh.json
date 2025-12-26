@@ -1,0 +1,251 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "viewAll": "查看全部",
+    "seeMore": "查看更多",
+    "getStarted": "开始使用",
+    "adminLogin": "管理员登录",
+    "noData": "暂无数据",
+    "update": "更新",
+    "delete": "删除",
+    "edit": "编辑",
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "close": "关闭",
+    "previous": "上一页",
+    "next": "下一页",
+    "add": "添加",
+    "create": "创建",
+    "active": "激活",
+    "inactive": "未激活",
+    "status": "状态",
+    "actions": "操作",
+    "createSuccess": "创建成功",
+    "updateSuccess": "更新成功",
+    "deleteSuccess": "删除成功",
+    "confirmDelete": "确定要删除吗？"
+  },
+  "theme": {
+    "darkMode": "深色模式",
+    "lightMode": "浅色模式"
+  },
+  "header": {
+    "title": "礼品卡平台",
+    "home": "首页",
+    "trades": "成交记录",
+    "help": "帮助中心",
+    "about": "关于我们",
+    "adminLogin": "管理员登录"
+  },
+  "home": {
+    "featuredProducts": "精选礼品卡",
+    "exchangeRates": "实时汇率",
+    "referralRewards": "推荐奖励",
+    "conversionCalculator": "换算计算器",
+    "exchangeHall": "兑换大厅",
+    "recentTrades": "最新成交",
+    "processGuide": "兑换流程",
+    "securityInfo": "安全保障",
+    "supportedCards": "支持的礼品卡"
+  },
+  "referralRewards": {
+    "title": "赚取奖励",
+    "description": "通过推荐朋友到我们的平台来赚取奖励！每次成功推荐都会让您更接近专属福利。开始分享并获得您的奖励。",
+    "startEarning": "开始赚取",
+    "earnRewards": "赚取奖励",
+    "referDescription": "推荐您的朋友，每当他们交易时即可赚取积分。",
+    "referralProgram": "推荐计划",
+    "commission": "每笔交易赚取 5% 佣金",
+    "transactions": "交易",
+    "years": "年",
+    "support": "支持"
+  },
+  "videoIntroduction": "视频介绍",
+  "calculator": {
+    "title": "换算计算器",
+    "selectCardType": "选择卡片类型",
+    "selectSubCategory": "选择子类别",
+    "enterAmount": "输入卡片金额",
+    "cashValue": "现金价值",
+    "calculating": "计算中...",
+    "amountHint": "金额根据当前汇率计算。",
+    "chooseCardType": "选择卡片类型",
+    "chooseSubCategory": "选择子类别",
+    "noCategoryAvailable": "该卡片类型暂无可用种类，请在后台配置",
+    "currency": {
+      "ngn": "奈拉 (₦)",
+      "ghc": "加纳塞地 (₵)"
+    }
+  },
+  "products": {
+    "exchangeRate": "汇率",
+    "limit": "限额",
+    "exchangeNow": "立即兑换",
+    "category": "分类",
+    "all": "全部",
+    "noProducts": "暂无可用产品",
+    "noProductsInCategory": "该分类下暂无产品",
+    "showMore": "显示更多",
+    "showLess": "收起"
+  },
+  "trades": {
+    "title": "成交记录",
+    "recentTrades": "最新成交",
+    "noTrades": "暂无成交记录",
+    "status": {
+      "completed": "已完成",
+      "processing": "处理中"
+    },
+    "amount": "金额",
+    "totalAmount": "总金额",
+    "updatedAt": "时间",
+    "page": "第",
+    "of": "页，共",
+    "total": "共",
+    "records": "条记录",
+    "itemsPerPage": "每页显示",
+    "product": "产品",
+    "statusLabel": "状态"
+  },
+  "exchangeRates": {
+    "title": "实时汇率",
+    "updatedAt": "更新于",
+    "noRates": "暂无汇率数据",
+    "currency": "货币",
+    "symbol": "符号",
+    "rate": "汇率",
+    "change": "变化",
+    "changeRate": "变化率",
+    "updateTime": "更新时间",
+    "otherCurrencies": "其他货币汇率"
+  },
+  "currencies": {
+    "usd": "美元",
+    "cny": "人民币",
+    "ngn": "奈拉",
+    "btc": "比特币",
+    "ghc": "加纳塞地",
+    "jpy": "日元",
+    "eur": "欧元",
+    "gbp": "英镑",
+    "cad": "加元",
+    "aud": "澳元"
+  },
+  "processGuide": {
+    "title": "兑换流程",
+    "step": "步骤"
+  },
+  "securityInfo": {
+    "title": "安全保障",
+    "description": "我们采用多重安全措施，确保您的每一笔交易都安全可靠"
+  },
+  "footer": {
+    "copyright": "© 2024 RichMax. 保留所有权利.",
+    "tagline": "您值得信赖的礼品卡兑换伙伴",
+    "helpCenter": "帮助中心",
+    "tradeRecords": "成交记录"
+  },
+  "about": {
+    "hero": {
+      "description": "全球领先的礼品卡兑换平台，为全球客户提供安全、快速、可靠的服务。"
+    },
+    "introduction": {
+      "title": "关于 RichMax",
+      "paragraph1": "RichMax 是一家领先的全球礼品卡兑换平台，致力于提供安全、快速、可靠的礼品卡交易服务。我们为来自50多个国家的客户提供服务，帮助他们快速、安全地将未使用的礼品卡兑换成现金。",
+      "paragraph2": "凭借多年的行业经验和专业团队，我们建立了涵盖多个礼品卡品牌和货币的完善服务体系。我们的平台采用先进的安全技术，确保每一笔交易都受到保护。",
+      "paragraph3": "我们致力于提供最佳的汇率和卓越的客户服务，让礼品卡兑换变得简单、便捷、值得信赖。"
+    },
+    "stats": {
+      "title": "我们的成就",
+      "transactions": "总交易量",
+      "users": "活跃用户",
+      "countries": "服务国家",
+      "satisfaction": "客户满意度"
+    },
+    "strengths": {
+      "title": "为什么选择 RichMax",
+      "professional": {
+        "title": "专业团队",
+        "description": "多年行业经验，拥有专业团队确保服务质量。"
+      },
+      "security": {
+        "title": "银行级安全",
+        "description": "先进的加密和安全措施，保护每笔交易和用户数据。"
+      },
+      "speed": {
+        "title": "快速处理",
+        "description": "快速交易处理，大多数兑换在几分钟内完成。"
+      },
+      "global": {
+        "title": "全球覆盖",
+        "description": "为来自50多个国家的客户提供服务，支持多种货币。"
+      },
+      "competitive": {
+        "title": "竞争力汇率",
+        "description": "市场上最佳的汇率，确保您的礼品卡获得最大价值。"
+      },
+      "service": {
+        "title": "24/7 支持",
+        "description": "全天候客户服务，随时为您提供帮助。"
+      }
+    },
+    "mission": {
+      "title": "我们的使命",
+      "description": "让礼品卡兑换变得简单、安全、人人可及，帮助客户释放未使用礼品卡的价值，同时保持最高的服务和安全标准。"
+    },
+    "vision": {
+      "title": "我们的愿景",
+      "description": "成为世界上最值得信赖和首选的礼品卡兑换平台，以创新、可靠和卓越的客户体验而闻名。"
+    },
+    "gallery": {
+      "title": "公司风采"
+    }
+  },
+  "supportedCards": {
+    "title": "支持的礼品卡",
+    "noCards": "暂无支持的卡片",
+    "description": "交易这些热门品牌的礼品卡。"
+  },
+  "help": {
+    "title": "帮助中心",
+    "faq": "常见问题",
+    "contact": "联系我们",
+    "needMoreHelp": "需要更多帮助？",
+    "contactDescription": "如果您还有其他问题，请联系我们的客服团队。",
+    "contactButton": "联系客服"
+  },
+  "productDetail": {
+    "notFound": "产品不存在",
+    "backToList": "返回产品列表",
+    "home": "首页",
+    "exchangeHall": "兑换大厅",
+    "minAmount": "最小金额",
+    "maxAmount": "最大金额",
+    "noImage": "暂无图片",
+    "exchangeNow": "立即兑换"
+  },
+  "admin": {
+    "videos": {
+      "title": "视频管理",
+      "description": "描述",
+      "descriptionPlaceholder": "请输入视频描述（可选）",
+      "type": "类型",
+      "typeCompany": "公司介绍",
+      "typeBusiness": "业务介绍",
+      "sortOrder": "排序",
+      "videoFile": "视频文件",
+      "videoUrl": "视频URL",
+      "thumbnailUrl": "缩略图URL",
+      "currentVideo": "当前视频"
+    }
+  },
+  "videos": {
+    "noVideos": "暂无视频",
+    "companyIntroduction": "公司介绍",
+    "businessIntroduction": "业务介绍"
+  }
+}
+

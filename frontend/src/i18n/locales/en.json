@@ -1,0 +1,221 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "viewAll": "View All",
+    "seeMore": "See More",
+    "getStarted": "Get Started",
+    "adminLogin": "Admin Login",
+    "noData": "No Data",
+    "update": "Update",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "theme": {
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  },
+  "header": {
+    "title": "Gift Card Platform",
+    "home": "Home",
+    "trades": "Trade Records",
+    "help": "Help Center",
+    "about": "About Us",
+    "adminLogin": "Admin Login"
+  },
+  "home": {
+    "featuredProducts": "Featured Gift Cards",
+    "exchangeRates": "Real-time Exchange Rates",
+    "referralRewards": "Earn Rewards",
+    "conversionCalculator": "Conversion Calculator",
+    "exchangeHall": "Exchange Hall",
+    "recentTrades": "Recent Trades",
+    "processGuide": "Exchange Process",
+    "securityInfo": "Security Assurance",
+    "supportedCards": "Supported Gift Cards"
+  },
+  "referralRewards": {
+    "title": "Earn Rewards",
+    "description": "Earn rewards by referring friends to our platform! Every successful referral brings you closer to exclusive perks. Start sharing and get your reward.",
+    "startEarning": "Start Earning",
+    "earnRewards": "Earn Rewards",
+    "referDescription": "Refer your friends and earn points anytime they trade.",
+    "referralProgram": "Referral Program",
+    "commission": "Earn 5% commission on every trade",
+    "transactions": "Transactions",
+    "years": "Years",
+    "support": "Support"
+  },
+  "videoIntroduction": "Video Introduction",
+  "calculator": {
+    "title": "Conversion Calculator",
+    "selectCardType": "Select Card Type",
+    "selectSubCategory": "Select Sub-category",
+    "enterAmount": "Enter card Amount",
+    "cashValue": "Cash Value",
+    "calculating": "Calculating...",
+    "amountHint": "Amount calculated based on current rate.",
+    "chooseCardType": "Choose a card type",
+    "chooseSubCategory": "Choose a sub-category",
+    "noCategoryAvailable": "No sub-categories available for this card type. Please configure in admin panel.",
+    "currency": {
+      "ngn": "Naira (₦)",
+      "ghc": "Ghana Cedis (₵)"
+    }
+  },
+  "products": {
+    "exchangeRate": "Exchange Rate",
+    "limit": "Limit",
+    "exchangeNow": "Exchange Now",
+    "category": "Category",
+    "all": "All",
+    "noProducts": "No products available",
+    "noProductsInCategory": "No products in this category",
+    "showMore": "Show More",
+    "showLess": "Show Less"
+  },
+  "trades": {
+    "title": "Trade Records",
+    "recentTrades": "Recent Trades",
+    "noTrades": "No trade records",
+    "status": {
+      "completed": "Completed",
+      "processing": "Processing"
+    },
+    "amount": "Amount",
+    "totalAmount": "Total Amount",
+    "updatedAt": "Time",
+    "page": "Page",
+    "of": "of",
+    "total": "Total",
+    "records": "records",
+    "itemsPerPage": "Items per page",
+    "product": "Product",
+    "statusLabel": "Status"
+  },
+  "exchangeRates": {
+    "title": "Real-time Exchange Rates",
+    "updatedAt": "Updated at",
+    "noRates": "No exchange rate data",
+    "currency": "Currency",
+    "symbol": "Symbol",
+    "rate": "Rate",
+    "change": "Change",
+    "changeRate": "Change Rate",
+    "updateTime": "Update Time",
+    "otherCurrencies": "Other Currencies"
+  },
+  "currencies": {
+    "usd": "US Dollar",
+    "cny": "Chinese Yuan",
+    "ngn": "Nigerian Naira",
+    "btc": "Bitcoin",
+    "ghc": "Ghanaian Cedis",
+    "jpy": "Japanese Yen",
+    "eur": "Euro",
+    "gbp": "British Pound",
+    "cad": "Canadian Dollar",
+    "aud": "Australian Dollar"
+  },
+  "processGuide": {
+    "title": "Exchange Process",
+    "step": "Step"
+  },
+  "securityInfo": {
+    "title": "Security Assurance",
+    "description": "We adopt multiple security measures to ensure every transaction is safe and reliable"
+  },
+  "footer": {
+    "copyright": "© 2024 RichMax. All rights reserved.",
+    "tagline": "Your Trusted Gift Card Exchange Partner",
+    "helpCenter": "Help Center",
+    "tradeRecords": "Trade Records"
+  },
+  "about": {
+    "hero": {
+      "description": "Leading global gift card exchange platform, providing secure, fast, and reliable services to customers worldwide."
+    },
+    "introduction": {
+      "title": "About RichMax",
+      "paragraph1": "RichMax is a leading global gift card exchange platform dedicated to providing secure, fast, and reliable gift card trading services. We serve customers from over 50 countries, helping them convert unused gift cards into cash quickly and safely.",
+      "paragraph2": "With years of industry experience and a professional team, we have established a comprehensive service system covering multiple gift card brands and currencies. Our platform uses advanced security technology to ensure every transaction is protected.",
+      "paragraph3": "We are committed to providing the best exchange rates and excellent customer service, making gift card exchange simple, convenient, and trustworthy."
+    },
+    "stats": {
+      "title": "Our Achievements",
+      "transactions": "Total Transactions",
+      "users": "Active Users",
+      "countries": "Countries Served",
+      "satisfaction": "Customer Satisfaction"
+    },
+    "strengths": {
+      "title": "Why Choose RichMax",
+      "professional": {
+        "title": "Professional Team",
+        "description": "Years of industry experience with a dedicated team of experts ensuring quality service."
+      },
+      "security": {
+        "title": "Bank-Level Security",
+        "description": "Advanced encryption and security measures to protect every transaction and user data."
+      },
+      "speed": {
+        "title": "Fast Processing",
+        "description": "Quick transaction processing with most exchanges completed within minutes."
+      },
+      "global": {
+        "title": "Global Reach",
+        "description": "Serving customers from over 50 countries with multi-currency support."
+      },
+      "competitive": {
+        "title": "Competitive Rates",
+        "description": "Best exchange rates in the market, ensuring maximum value for your gift cards."
+      },
+      "service": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock customer service ready to assist you at any time."
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To make gift card exchange simple, secure, and accessible to everyone, helping customers unlock the value of their unused gift cards while maintaining the highest standards of service and security."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become the world's most trusted and preferred gift card exchange platform, recognized for innovation, reliability, and exceptional customer experience."
+    },
+    "gallery": {
+      "title": "Company Gallery"
+    }
+  },
+  "supportedCards": {
+    "title": "Supported Gift Cards",
+    "noCards": "No supported cards",
+    "description": "Trade your gift cards from these popular brands."
+  },
+  "help": {
+    "title": "Help Center",
+    "faq": "Frequently Asked Questions",
+    "contact": "Contact Us",
+    "needMoreHelp": "Need more help?",
+    "contactDescription": "If you still have questions, please contact our support team.",
+    "contactButton": "Contact Support"
+  },
+  "productDetail": {
+    "notFound": "Product Not Found",
+    "backToList": "Back to Product List",
+    "home": "Home",
+    "exchangeHall": "Exchange Hall",
+    "minAmount": "Minimum Amount",
+    "maxAmount": "Maximum Amount",
+    "noImage": "No Image Available",
+    "exchangeNow": "Exchange Now"
+  }
+}
+

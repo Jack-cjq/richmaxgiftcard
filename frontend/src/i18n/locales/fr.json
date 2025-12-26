@@ -1,0 +1,218 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "viewAll": "Voir Tout",
+    "seeMore": "Voir Plus",
+    "getStarted": "Commencer",
+    "adminLogin": "Connexion Admin",
+    "noData": "Aucune Donnée",
+    "update": "Mettre à Jour",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "close": "Fermer"
+  },
+  "theme": {
+    "darkMode": "Mode Sombre",
+    "lightMode": "Mode Clair"
+  },
+  "header": {
+    "title": "Plateforme de Cartes Cadeaux",
+    "home": "Accueil",
+    "trades": "Historique des Transactions",
+    "help": "Centre d'Aide",
+    "about": "À Propos",
+    "adminLogin": "Connexion Admin"
+  },
+  "home": {
+    "featuredProducts": "Cartes Cadeaux en Vedette",
+    "exchangeRates": "Taux de Change en Temps Réel",
+    "referralRewards": "Gagnez des Récompenses",
+    "conversionCalculator": "Calculateur de Conversion",
+    "exchangeHall": "Salle d'Échange",
+    "recentTrades": "Transactions Récentes",
+    "processGuide": "Processus d'Échange",
+    "securityInfo": "Garantie de Sécurité",
+    "supportedCards": "Cartes Cadeaux Prises en Charge"
+  },
+  "referralRewards": {
+    "title": "Gagnez des Récompenses",
+    "description": "Gagnez des récompenses en référant des amis à notre plateforme ! Chaque référence réussie vous rapproche d'avantages exclusifs. Commencez à partager et obtenez votre récompense.",
+    "startEarning": "Commencer à Gagner",
+    "earnRewards": "Gagnez des Récompenses",
+    "referDescription": "Référez vos amis et gagnez des points à chaque fois qu'ils effectuent une transaction.",
+    "referralProgram": "Programme de Parrainage",
+    "commission": "Gagnez 5% de commission sur chaque transaction",
+    "transactions": "Transactions",
+    "years": "Années",
+    "support": "Support"
+  },
+  "calculator": {
+    "title": "Calculateur de Conversion",
+    "selectCardType": "Sélectionner le Type de Carte",
+    "selectSubCategory": "Sélectionner la Sous-catégorie",
+    "enterAmount": "Entrer le Montant de la Carte",
+    "cashValue": "Valeur en Espèces",
+    "calculating": "Calcul en cours...",
+    "amountHint": "Le montant est calculé selon le taux actuel.",
+    "chooseCardType": "Choisir un type de carte",
+    "chooseSubCategory": "Choisir une sous-catégorie",
+    "noCategoryAvailable": "Aucune sous-catégorie disponible pour ce type de carte. Veuillez configurer dans le panneau d'administration.",
+    "currency": {
+      "ngn": "Naira (₦)",
+      "ghc": "Cedis du Ghana (₵)"
+    }
+  },
+  "products": {
+    "exchangeRate": "Taux de Change",
+    "limit": "Limite",
+    "exchangeNow": "Échanger Maintenant",
+    "category": "Catégorie",
+    "all": "Tous",
+    "noProducts": "Aucun produit disponible",
+    "noProductsInCategory": "Aucun produit dans cette catégorie",
+    "showMore": "Afficher Plus",
+    "showLess": "Afficher Moins"
+  },
+  "trades": {
+    "title": "Historique des Transactions",
+    "recentTrades": "Transactions Récentes",
+    "noTrades": "Aucun historique de transaction",
+    "status": {
+      "completed": "Terminé",
+      "processing": "En Traitement"
+    },
+    "amount": "Montant",
+    "totalAmount": "Montant Total",
+    "updatedAt": "Mis à jour le",
+    "page": "Page",
+    "of": "sur",
+    "total": "Total",
+    "records": "enregistrements",
+    "itemsPerPage": "Éléments par page",
+    "product": "Produit",
+    "statusLabel": "Statut"
+  },
+  "exchangeRates": {
+    "title": "Taux de Change en Temps Réel",
+    "updatedAt": "Mis à jour le",
+    "noRates": "Aucune donnée de taux de change",
+    "currency": "Devise",
+    "symbol": "Symbole",
+    "rate": "Taux",
+    "change": "Changement",
+    "changeRate": "Taux de Changement",
+    "updateTime": "Heure de Mise à Jour",
+    "otherCurrencies": "Autres Devises"
+  },
+  "currencies": {
+    "usd": "Dollar Américain",
+    "cny": "Yuan Chinois",
+    "ngn": "Naira Nigérian",
+    "btc": "Bitcoin",
+    "ghc": "Cedis du Ghana",
+    "jpy": "Yen Japonais",
+    "eur": "Euro",
+    "gbp": "Livre Sterling",
+    "cad": "Dollar Canadien",
+    "aud": "Dollar Australien"
+  },
+  "processGuide": {
+    "title": "Processus d'Échange",
+    "step": "Étape"
+  },
+  "securityInfo": {
+    "title": "Garantie de Sécurité",
+    "description": "Nous adoptons plusieurs mesures de sécurité pour garantir que chaque transaction soit sûre et fiable"
+  },
+  "footer": {
+    "copyright": "© 2024 RichMax. Tous droits réservés.",
+    "tagline": "Votre Partenaire de Confiance pour l'Échange de Cartes Cadeaux",
+    "helpCenter": "Centre d'Aide",
+    "tradeRecords": "Historique des Transactions"
+  },
+  "about": {
+    "hero": {
+      "description": "Plateforme mondiale leader d'échange de cartes cadeaux, fournissant des services sécurisés, rapides et fiables aux clients du monde entier."
+    },
+    "introduction": {
+      "title": "À Propos de RichMax",
+      "paragraph1": "RichMax est une plateforme mondiale leader d'échange de cartes cadeaux dédiée à fournir des services de commerce de cartes cadeaux sécurisés, rapides et fiables. Nous servons des clients de plus de 50 pays, les aidant à convertir leurs cartes cadeaux inutilisées en espèces rapidement et en toute sécurité.",
+      "paragraph2": "Avec des années d'expérience dans l'industrie et une équipe professionnelle, nous avons établi un système de service complet couvrant plusieurs marques de cartes cadeaux et devises. Notre plateforme utilise une technologie de sécurité avancée pour garantir que chaque transaction soit protégée.",
+      "paragraph3": "Nous nous engageons à fournir les meilleurs taux de change et un excellent service client, rendant l'échange de cartes cadeaux simple, pratique et digne de confiance."
+    },
+    "stats": {
+      "title": "Nos Réalisations",
+      "transactions": "Transactions Totales",
+      "users": "Utilisateurs Actifs",
+      "countries": "Pays Desservis",
+      "satisfaction": "Satisfaction Client"
+    },
+    "strengths": {
+      "title": "Pourquoi Choisir RichMax",
+      "professional": {
+        "title": "Équipe Professionnelle",
+        "description": "Des années d'expérience dans l'industrie avec une équipe dédiée d'experts garantissant un service de qualité."
+      },
+      "security": {
+        "title": "Sécurité Niveau Bancaire",
+        "description": "Mesures avancées de cryptage et de sécurité pour protéger chaque transaction et les données utilisateur."
+      },
+      "speed": {
+        "title": "Traitement Rapide",
+        "description": "Traitement rapide des transactions avec la plupart des échanges complétés en quelques minutes."
+      },
+      "global": {
+        "title": "Portée Mondiale",
+        "description": "Servir des clients de plus de 50 pays avec support multi-devises."
+      },
+      "competitive": {
+        "title": "Taux Compétitifs",
+        "description": "Meilleurs taux de change du marché, garantissant une valeur maximale pour vos cartes cadeaux."
+      },
+      "service": {
+        "title": "Support 24/7",
+        "description": "Service client 24 heures sur 24, 7 jours sur 7, prêt à vous assister à tout moment."
+      }
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Rendre l'échange de cartes cadeaux simple, sécurisé et accessible à tous, aidant les clients à débloquer la valeur de leurs cartes cadeaux inutilisées tout en maintenant les plus hauts standards de service et de sécurité."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Devenir la plateforme d'échange de cartes cadeaux la plus fiable et préférée au monde, reconnue pour l'innovation, la fiabilité et une expérience client exceptionnelle."
+    },
+    "gallery": {
+      "title": "Galerie de l'Entreprise"
+    }
+  },
+  "supportedCards": {
+    "title": "Cartes Cadeaux Prises en Charge",
+    "noCards": "Aucune carte prise en charge",
+    "description": "Échangez vos cartes cadeaux de ces marques populaires."
+  },
+  "help": {
+    "title": "Centre d'Aide",
+    "faq": "Questions Fréquemment Posées",
+    "contact": "Nous Contacter",
+    "needMoreHelp": "Besoin de plus d'aide ?",
+    "contactDescription": "Si vous avez encore des questions, contactez notre équipe d'assistance.",
+    "contactButton": "Contacter le Support"
+  },
+  "productDetail": {
+    "notFound": "Produit Introuvable",
+    "backToList": "Retour à la Liste des Produits",
+    "home": "Accueil",
+    "exchangeHall": "Salle d'Échange",
+    "minAmount": "Montant Minimum",
+    "maxAmount": "Montant Maximum",
+    "noImage": "Image Non Disponible",
+    "exchangeNow": "Échanger Maintenant"
+  }
+}
+
