@@ -29,6 +29,18 @@ export default function AdminTrades() {
     loadConversionConfig()
   }, [page, limit])
 
+  // 自动计算总金额：金额 × 汇率
+  useEffect(() => {
+    if (formData.amount && formData.exchangeRate) {
+      const amount = parseFloat(formData.amount)
+      const exchangeRate = parseFloat(formData.exchangeRate)
+      if (!isNaN(amount) && !isNaN(exchangeRate) && amount > 0 && exchangeRate > 0) {
+        const calculatedTotal = (amount * exchangeRate).toFixed(2)
+        setFormData(prev => ({ ...prev, totalAmount: calculatedTotal }))
+      }
+    }
+  }, [formData.amount, formData.exchangeRate])
+
   const loadConversionConfig = async () => {
     try {
       const res = await adminApi.getConversionConfig()
@@ -96,12 +108,24 @@ export default function AdminTrades() {
       return
     }
 
+    // 验证总金额是否正确（金额 × 汇率）
+    const amount = parseFloat(formData.amount)
+    const exchangeRate = parseFloat(formData.exchangeRate)
+    const totalAmount = parseFloat(formData.totalAmount)
+    const expectedTotal = amount * exchangeRate
+    
+    // 允许小数点后2位的误差
+    if (Math.abs(totalAmount - expectedTotal) > 0.01) {
+      toast.error(`总金额不正确！应该是 ${expectedTotal.toFixed(2)}（金额 × 汇率）`)
+      return
+    }
+
     try {
       const tradeData = {
         ...formData,
-        amount: parseFloat(formData.amount),
-        exchangeRate: parseFloat(formData.exchangeRate),
-        totalAmount: parseFloat(formData.totalAmount),
+        amount: amount,
+        exchangeRate: exchangeRate,
+        totalAmount: totalAmount,
       }
 
       if (editing) {
@@ -142,7 +166,7 @@ export default function AdminTrades() {
   return (
     <AdminLayout>
       <div>
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold text-neutral-700">交易管理</h1>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-3">
@@ -175,6 +199,86 @@ export default function AdminTrades() {
             >
               新增交易
             </button>
+          </div>
+        </div>
+
+        {/* 字段说明 */}
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-5 mb-6 shadow-sm">
+          <h3 className="text-lg font-semibold text-blue-900 mb-4 flex items-center gap-2">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            字段说明与计算规则
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm">
+            <div className="bg-white rounded-lg p-4 border border-blue-100">
+              <p className="font-semibold mb-3 text-blue-900 flex items-center gap-2">
+                <span className="text-lg">📊</span>
+                基准货币
+              </p>
+              <p className="text-neutral-700 leading-relaxed">
+                系统使用 <span className="font-bold text-blue-600 text-base">CNY（人民币）</span> 作为基准货币。
+                <br />
+                所有交易金额最终都会转换为 <span className="font-semibold">CNY</span> 进行存储和计算。
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-4 border border-blue-100">
+              <p className="font-semibold mb-3 text-blue-900 flex items-center gap-2">
+                <span className="text-lg">💰</span>
+                字段含义
+              </p>
+              <ul className="space-y-2 text-neutral-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>产品名称：</strong>交易的产品名称（如：Steam US）</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>货币：</strong>原始货币类型（如：USD）</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>金额：</strong>原始货币的金额（如：500 USD）</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>汇率：</strong>原始货币到基准货币（CNY）的汇率（如：1 USD = 5.4 CNY）</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>总金额：</strong>自动计算 = 金额 × 汇率（单位：CNY）</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>状态：</strong>交易状态（已完成/处理中）</span>
+                </li>
+              </ul>
+            </div>
+            <div className="md:col-span-2 bg-white rounded-lg p-4 border border-blue-100">
+              <p className="font-semibold mb-3 text-blue-900 flex items-center gap-2">
+                <span className="text-lg">🔄</span>
+                计算流程
+              </p>
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-200">
+                <div className="flex flex-wrap items-center gap-2 mb-3 justify-center md:justify-start">
+                  <span className="font-mono bg-blue-100 text-blue-900 px-3 py-1.5 rounded-md font-semibold">原始金额（USD）</span>
+                  <span className="text-blue-600 font-bold text-lg">×</span>
+                  <span className="font-mono bg-blue-100 text-blue-900 px-3 py-1.5 rounded-md font-semibold">汇率（USD→CNY）</span>
+                  <span className="text-blue-600 font-bold text-lg">=</span>
+                  <span className="font-mono bg-blue-200 text-blue-900 px-3 py-1.5 rounded-md font-semibold">总金额（CNY）</span>
+                </div>
+                <div className="text-xs text-blue-700 bg-white rounded p-2 border border-blue-100">
+                  <p className="font-semibold mb-1">📝 示例计算：</p>
+                  <p className="font-mono">
+                    500 USD × 5.4 = 2,700 CNY
+                    <br />
+                    <span className="text-blue-600">↓ 转换为显示货币</span>
+                    <br />
+                    ₦540,000 (NGN) 和 GH₵2,700 (GHC)
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -245,15 +349,14 @@ export default function AdminTrades() {
               <div>
                 <label className="block text-sm font-medium text-neutral-600 mb-2">
                   总金额 <span className="text-danger">*</span>
+                  <span className="text-xs text-neutral-500 ml-2">(自动计算：金额 × 汇率)</span>
                 </label>
                 <input
                   type="number"
                   step="0.01"
                   value={formData.totalAmount}
-                  onChange={(e) =>
-                    setFormData({ ...formData, totalAmount: e.target.value })
-                  }
-                  className="w-full px-4 py-2 border border-silver-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-600"
+                  readOnly
+                  className="w-full px-4 py-2 border border-silver-200 rounded-md bg-silver-50 cursor-not-allowed"
                   placeholder="自动计算：金额 × 汇率"
                 />
               </div>
@@ -312,10 +415,22 @@ export default function AdminTrades() {
                         金额
                       </th>
                       <th className="text-left py-4 px-4 text-neutral-600 font-semibold">
-                        汇率
+                        <div className="flex flex-col">
+                          <span>汇率</span>
+                          <span className="text-xs font-normal text-neutral-400 mt-0.5">(→CNY)</span>
+                        </div>
                       </th>
                       <th className="text-left py-4 px-4 text-neutral-600 font-semibold">
-                        总金额 (₦ / GH₵)
+                        <div className="flex flex-col">
+                          <span>总金额 (₦)</span>
+                          <span className="text-xs font-normal text-neutral-400 mt-0.5">(从CNY转换)</span>
+                        </div>
+                      </th>
+                      <th className="text-left py-4 px-4 text-neutral-600 font-semibold">
+                        <div className="flex flex-col">
+                          <span>总金额 (GH₵)</span>
+                          <span className="text-xs font-normal text-neutral-400 mt-0.5">(从CNY转换)</span>
+                        </div>
                       </th>
                       <th className="text-left py-4 px-4 text-neutral-600 font-semibold">
                         时间
@@ -331,7 +446,7 @@ export default function AdminTrades() {
                   <tbody>
                     {trades.length === 0 ? (
                       <tr>
-                        <td colSpan={7} className="text-center py-8 text-neutral-500">
+                        <td colSpan={8} className="text-center py-8 text-neutral-500">
                           暂无交易数据
                         </td>
                       </tr>
@@ -357,8 +472,12 @@ export default function AdminTrades() {
                         </td>
                         <td className="py-4 px-4">
                           <div className="text-green-600 font-bold">
-                            <div>₦{getConvertedAmount(Number(trade.totalAmount), 'NGN').toLocaleString()}</div>
-                            <div className="text-sm mt-1">GH₵{getConvertedAmount(Number(trade.totalAmount), 'GHC').toLocaleString()}</div>
+                            ₦{getConvertedAmount(Number(trade.totalAmount), 'NGN').toLocaleString()}
+                          </div>
+                        </td>
+                        <td className="py-4 px-4">
+                          <div className="text-green-600 font-bold">
+                            GH₵{getConvertedAmount(Number(trade.totalAmount), 'GHC').toLocaleString()}
                           </div>
                         </td>
                           <td className="py-4 px-4 text-neutral-500 text-sm">
