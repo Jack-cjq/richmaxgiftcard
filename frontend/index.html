@@ -28,14 +28,16 @@
       })();
     </script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17808279894"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17842190544"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'AW-17808279894');
+
+      gtag('config', 'AW-17842190544');
     </script>
-    <!-- Event snippet for 提交潜在客户表单 conversion page -->
+    <!-- Event snippet for 出站点击 conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
       function gtag_report_conversion(url) {
         var callback = function () {
@@ -44,9 +46,7 @@
           }
         };
         gtag('event', 'conversion', {
-            'send_to': 'AW-17808279894/LXfyCLuyk9IbENaS06tC',
-            'value': 1.0,
-            'currency': 'CNY',
+            'send_to': 'AW-17842190544/U72kCOnIz9kbENDx6LtC',
             'event_callback': callback
         });
         return false;
