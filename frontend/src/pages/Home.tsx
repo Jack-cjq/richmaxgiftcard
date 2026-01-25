@@ -4,7 +4,7 @@ import { gsap } from 'gsap'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Carousel from '@/components/Carousel'
-import ReferralRewards from '@/components/ReferralRewards'
+// import ReferralRewards from '@/components/ReferralRewards'
 import SupportedCards from '@/components/SupportedCards'
 import ConversionCalculator from '@/components/ConversionCalculator'
 import FeaturedProducts from '@/components/FeaturedProducts'
@@ -122,7 +122,7 @@ export default function Home() {
       </section>
 
       {/* 推荐奖励 - 浅蓝色背景 */}
-      <section 
+      {/* <section 
         className="section-card px-4 py-10 md:py-16 bg-gradient-to-br from-blue-50 to-blue-100/50 dark-mode:bg-black relative overflow-hidden"
       >
         <DecorativeWave color="blue" direction="up" />
@@ -134,7 +134,7 @@ export default function Home() {
           </h2>
           <ReferralRewards />
         </div>
-      </section>
+      </section> */}
 
       {/* 换算计算器 - 保持蓝色渐变背景 */}
       <section 
