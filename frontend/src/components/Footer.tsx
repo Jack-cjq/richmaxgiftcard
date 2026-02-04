@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="flex items-center gap-3 mb-4 md:mb-0">
             <img
               src="/images/logo/richmax-logo.png"
-              alt="RichMax Logo"
+              alt="RichPlus Logo"
               className="h-12 w-auto object-contain"
               onError={(e) => {
                 e.currentTarget.style.display = 'none'
@@ -20,7 +20,7 @@ export default function Footer() {
             />
             <div>
               <div className="text-2xl font-bold text-blue-600 dark-mode:text-gold-500">
-                RichMax
+                RichPlus
               </div>
               <p className="text-sm text-neutral-500 dark-mode:text-gold-500/70 mt-1">{t('footer.tagline')}</p>
             </div>

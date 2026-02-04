@@ -64,14 +64,14 @@ export default function Header() {
           >
             <img
               src="/images/logo/richmax-logo.png"
-              alt="RichMax Logo"
+              alt="RichPlus Logo"
               className="h-8 md:h-10 w-auto object-contain"
               onError={(e) => {
                 e.currentTarget.style.display = 'none'
               }}
             />
             <span className="text-xl md:text-2xl font-bold text-blue-600 whitespace-nowrap dark-mode:text-gold-500">
-              RichMax
+              RichPlus
             </span>
           </Link>
 

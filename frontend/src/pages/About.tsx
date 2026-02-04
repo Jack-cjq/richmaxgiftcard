@@ -117,7 +117,7 @@ export default function About() {
           <div className="flex justify-center mb-6">
             <img
               src="/images/logo/richmax-logo.png"
-              alt="RichMax Logo"
+              alt="RichPlus Logo"
               className="h-24 w-auto object-contain"
               onError={(e) => {
                 e.currentTarget.style.display = 'none'
@@ -126,7 +126,7 @@ export default function About() {
           </div>
           <h1 className="section-title text-5xl md:text-6xl font-bold text-neutral-700 dark-mode:text-gold-500 mb-6 relative inline-block">
             <span className="absolute left-1/2 -translate-x-1/2 -top-3 w-32 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent dark-mode:via-gold-500 rounded-full"></span>
-            RichMax
+            RichPlus
           </h1>
           <p className="text-xl text-neutral-600 dark-mode:text-gold-500/80 max-w-3xl mx-auto leading-relaxed mb-8">
             {t('about.hero.description')}
